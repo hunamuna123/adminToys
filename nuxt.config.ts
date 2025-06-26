@@ -58,9 +58,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
   css: ["@/assets/css/main.css"],
   plugins: ["@/plugins/preline.client.ts"],
+
+  server: {
+    port: 3001,
+  },
 
   compatibilityDate: "2024-10-23",
 });
