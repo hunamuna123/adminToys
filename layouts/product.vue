@@ -225,7 +225,7 @@
     loading.value = true;
   
     try {
-      const response = await fetch(`http://85.175.100.129:72/api/v1/ct/product/?page=${page}`, {
+      const response = await fetch(`https://plushmarket.ru/api/v1/ct/product/?page=${page}`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -288,7 +288,7 @@
     };
   
     try {
-      const response = await fetch(`http://85.175.100.129:72/api/v1/ct/product/${product.id}/`, {
+      const response = await fetch(`https://plushmarket.ru/api/v1/ct/product/${product.id}/`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -321,7 +321,7 @@
     }
   
     try {
-      const response = await fetch(`http://85.175.100.129:72/api/v1/ct/product/${productId}/`, {
+      const response = await fetch(`https://plushmarket.ru/api/v1/ct/product/${productId}/`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -355,7 +355,7 @@
     formData.append('file', file);
   
     try {
-      const response = await fetch(`http://85.175.100.129:72/api/v1/ct/product/${productId}/image/`, {
+      const response = await fetch(`https://plushmarket.ru/api/v1/ct/product/${productId}/image/`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -386,7 +386,7 @@
     }
   
     try {
-      const response = await fetch(`http://85.175.100.129:72/api/v1/ct/product/${productId}/image/?product_image_ids=${imageId}`, {
+      const response = await fetch(`https://plushmarket.ru/api/v1/ct/product/${productId}/image/?product_image_ids=${imageId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

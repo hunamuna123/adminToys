@@ -92,7 +92,7 @@
   
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://85.175.100.129:72/api/v1/sign-in/email-password/', {
+      const response = await fetch('https://plushmarket.ru/api/v1/sign-in/email-password/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -297,7 +297,7 @@
         productData.sizes = form.value.sizes;
       }
   
-      const response = await fetch('http://85.175.100.129:72/api/v1/ct/product/', {
+      const response = await fetch('https://plushmarket.ru/api/v1/ct/product/', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,
